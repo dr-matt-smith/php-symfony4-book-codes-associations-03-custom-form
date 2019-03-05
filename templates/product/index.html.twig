@@ -3,9 +3,9 @@
 {% block title %}Product index{% endblock %}
 
 {% block body %}
-
     <h1>Product index</h1>
-    <table>
+
+    <table class="table">
         <thead>
             <tr>
                 <th>Id</th>
@@ -36,6 +36,6 @@
         {% endfor %}
         </tbody>
     </table>
-    <a href="{{ path('product_new') }}">Create new</a>
 
+    <a href="{{ path('product_new') }}">Create new</a>
 {% endblock %}

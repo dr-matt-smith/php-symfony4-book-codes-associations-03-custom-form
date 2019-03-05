@@ -16,16 +16,15 @@ class ProductType extends AbstractType
     {
         $builder
             ->add('description')
-        ->add('image')
-        ->add('price')
-        ->add('category', EntityType::class, [
-                  // list objects from this class
-                  'class' => 'App:Category',
+            ->add('image')
+            ->add('price')
+            ->add('category', EntityType::class, [
+                // list objects from this class
+                'class' => 'App:Category',
 
-                  // use the 'Category.name' property as the visible option string
-                  'choice_label' => 'name',
-              ]);
-        ;
+                // use the 'Category.name' property as the visible option string
+                'choice_label' => 'name',
+            ]);        ;
     }
 
     public function configureOptions(OptionsResolver $resolver)
